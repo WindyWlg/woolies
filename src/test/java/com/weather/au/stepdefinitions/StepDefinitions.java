@@ -49,6 +49,6 @@ public class StepDefinitions {
 
     @Then("the result should include {string} with statusCode {string}")
     public void the_result_should_include_with_status_code(String expectedResult, String statusCode) {
-        // restAssuredThat(lastResponse -> lastResponse.statusCode(Integer.parseInt(statusCode)));
+        restAssuredThat(lastResponse -> lastResponse.statusCode(Integer.parseInt(statusCode)));
     }
 }
